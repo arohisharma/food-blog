@@ -20,14 +20,18 @@
     margin-top: 50px;
     text-align: center;
     }
+    #submitmsg {
+        display: none;
+        color: green;
+    }
     </style>
 </head>
 <BODY style="font-family:Verdana, Geneva, Tahoma, sans-serif;">
         <div class="left">
-            <H1>little sugar &amp; spice Welcome to my page Hello World</H1>
+            <H1>little sugar &amp; spice</H1>
         </div>
         <div class="box">
-        <form>
+        <form action="form.html" method="POST" onsubmit="myFunction(); return false;"> 
             <h2 align="center">Get in Touch</h2>    
             <table id="table1"; cellspacing="5px" cellpadding="5%"; align="center">   
             <tr>
@@ -70,11 +74,20 @@
         </tr>  
         <br>      
         <tr>     
-         <td><input type="button" value="Submit" align="right" ></td>   
-         <td><input type="button" value="Reset" ></td>
+         <td><input type="submit" value="Submit" align="right"></td>   
+         <td><input type="reset" value="Reset" ></td>
          </tr>
          </table>   
         </form>
+        <p id="submitmsg">
+            Submitted Successfully!
+        </p>
         </div>
+        <script>
+            function myFunction() {
+              //alert("The form was submitted");
+              document.getElementById("submitmsg").style.display="inline-block";
+            }
+        </script>
 </body>
 </html>
