@@ -24,6 +24,11 @@
         display: none;
         color: green;
     }
+    p {
+        text-align: center;
+        font-style: italic;
+        ;
+    }
     </style>
 </head>
 <BODY style="font-family:Verdana, Geneva, Tahoma, sans-serif;">
@@ -31,7 +36,7 @@
             <H1>little sugar &amp; spice</H1>
         </div>
         <div class="box">
-        <form action="form.html" method="POST" onsubmit="myFunction(); return false;"> 
+        <form action="#" method="POST" onsubmit="myFunction(); return false;"> 
             <h2 align="center">Get in Touch</h2>    
             <table id="table1"; cellspacing="5px" cellpadding="5%"; align="center">   
             <tr>
@@ -53,9 +58,8 @@
                 <td align="center"><input type="text" name="Email" size="30"></td>
             </tr>   
         <tr>    
-        <td align="center">Age</td>
-        </tr>
-        <td align="center"><select name="Age">    
+        <td align="center">Age
+        <select name="Age">    
             <option value="Below 10">Below 10</option>    
             <option value="11-20">11-20</option>
             <option value="21-30">21-30</option>
@@ -66,13 +70,21 @@
         </td>   
         </tr>
         <tr>
-            <td align="center">
+            <td align="center">`
                 Category    
                 <input type="checkbox" value="veg">Veg  
                 <input type="checkbox" value="non-veg">Non-Veg     
             </td>
         </tr>  
-        <br>      
+        <br>
+        <tr>
+            <td align="center">
+                <label for="fileupload">share your recipe with us</label> &nbsp; &nbsp; 
+                <input type="file"
+                id="fileupload" name="fileupload"
+                accept=".gif,.jpg,.jpeg,.png,.doc,.docx, .pdf">
+            </td>
+        </tr>      
         <tr>     
          <td><input type="submit" value="Submit" align="right"></td>   
          <td><input type="reset" value="Reset" ></td>
