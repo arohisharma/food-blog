@@ -11,54 +11,78 @@
         margin-right: 870px;
         text-align: center;
     }
-    div.box {
-    border-radius: 5px;
-    background-color:rgba(233, 150, 122, 0.192);
-    padding: 20px;
-    width: 50%;
-    margin-left: 300px;
-    margin-top: 50px;
-    text-align: center;
+    .bimg {
+        background-image: url("background.jpg");
+        height: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+
+    }
+    .button {
+        background-color: black;
+        border: none;
+        color: white;
+        padding: 10px 27px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+    }
+    H1 {
+        position: absolute;
+        top: 10%;
+        left: 40%;
     }
     #submitmsg {
         display: none;
         color: green;
     }
+    .tag {
+       position: absolute;
+       background-color: white;
+       left: 30%;
+       top: 30%;
+       z-index: 1000;
+       padding: 10px;
+       color: black;
+       font-weight: bold;
+       text-align: left;
+    }
     p {
         text-align: center;
         font-style: italic;
+        position: absolute;
+        top: 17%;
+        left: 38%
         ;
     }
     </style>
 </head>
 <BODY style="font-family:Verdana, Geneva, Tahoma, sans-serif;">
+        <div class="bimg"></div>
         <div class="left">
-            <H1>little sugar &amp; spice</H1>
+            <H1 align="center">Get in Touch</H1>
+            <p>Please fill in your information here</p> 
         </div>
-        <div class="box">
-        <form action="#" method="POST" onsubmit="myFunction(); return false;"> 
-            <h2 align="center">Get in Touch</h2>    
+        <div class="tag">
+        <form action="#" method="POST" onsubmit="myFunction(); return false;">   
             <table id="table1"; cellspacing="5px" cellpadding="5%"; align="center">   
             <tr>
-                <td align="center">Full Name</td>
-            </tr>    
+                <td>Name &nbsp; &nbsp;
+                <input type="text" name="Name" placeholder="first name" size="30">  &nbsp; &nbsp;
+                <input type="text" name=Name" placeholder="last name" size="30"></td>
+            </tr> 
             <tr>
-                 <td align="CENTER"><input type="text" name="Full Name" size="30"></td>
-            </tr>      
+                <td>Email Id &nbsp; &nbsp;
+            <input type="email" name="Email" placeholder="Email Id" size="30" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$""></td>
+            </tr>       
             <tr>
-                <td align="center">Contact number</td>
-            </tr>
-            <tr>              
-                <td align="center"><input type="text" name="Contact number" size="30"></td>  
-            </tr>
-            <tr>
-                <td align="center">Email</td>
-            </tr>
-            <tr>    
-                <td align="center"><input type="text" name="Email" size="30"></td>
-            </tr>   
+                <td><label for="phone">Contact Number</label> &nbsp; &nbsp;
+                <input type="tel" id="phone" placeholder="+91-1234567890" name="Contact number" size="30" pattern="+91=[0-9]{10}"></td>  
+            </tr> 
         <tr>    
-        <td align="center">Age
+        <td>Age &nbsp; &nbsp;
         <select name="Age">    
             <option value="Below 10">Below 10</option>    
             <option value="11-20">11-20</option>
@@ -70,15 +94,15 @@
         </td>   
         </tr>
         <tr>
-            <td align="center">`
-                Category    
-                <input type="checkbox" value="veg">Veg  
-                <input type="checkbox" value="non-veg">Non-Veg     
+            <td>
+                Category &nbsp; &nbsp;
+                <input type="radio" id="veg" name="category">Veg
+                <input type="radio" id="nonveg" name="category">Non-Veg   
             </td>
         </tr>  
         <br>
         <tr>
-            <td align="center">
+            <td>
                 <label for="fileupload">share your recipe with us</label> &nbsp; &nbsp; 
                 <input type="file"
                 id="fileupload" name="fileupload"
@@ -86,8 +110,7 @@
             </td>
         </tr>      
         <tr>     
-         <td><input type="submit" value="Submit" align="right"></td>   
-         <td><input type="reset" value="Reset" ></td>
+         <td><hr><br><input type="submit" class="button" value="Submit"></td>   
          </tr>
          </table>   
         </form>
