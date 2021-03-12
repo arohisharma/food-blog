@@ -21,6 +21,14 @@
                 margin-right: 230px ;
                 margin-bottom: 50px;
             }
+            div.linkbox {
+                background-color:gold ;
+                height: 150px;
+                width: 150px;
+                display: inline-block;
+                padding: 30px;
+                margin: 50px;
+            }
              div.box {
                 background-color:gainsboro;
                 color: white;
@@ -51,6 +59,7 @@
                 display: inline-block;
                 font-size: 16px;
                 margin-left: 200px;
+                border-radius: 15px;
             }
             .footer {
                 position:relative;
@@ -66,31 +75,30 @@
     <body style="font-family:Verdana, Geneva, Tahoma, sans-serif;">
         <h1 id="top" text-align="center">little sugar &amp; spice</h1>
         <section>
-        <p>
-            This page includes
-        </p>
-        <ul>
-        <li><a href="#section1">healthy eating</a></li><br>
-        <li><a href="#section2">immunity boosting</a></li><br>
-        <li><a href="#section3">italian cuisine</a></li><br>
-        </ul>
+        <div class="linkbox">
+        <a href="#section1">healthy eating</a></div>
+        <div class="linkbox">
+        <a href="#section2">immunity boosting</a></div>
+        <div class="linkbox">
+        <a href="#section3">italian cuisine</a></div>
         </section></div>
-        <br><hr width="95%"><br>
+        <br>
+        <section id="section1">
+        <hr width="95%"><br>
         <div class="longbox">
         <div class="picture">
             <img src="healthy.jpg" alt="picture of fruit" height=430 width="430"></div>
-        </div>
-        <section id="section1">
-        <div class="box">
+        </div>        <div class="box">
             <h2>Healthy Eating</h2>
             <p class="container">Eating a healthy diet is not about strict limitations, staying unrealistically thin, or depriving yourself of the foods you love. Rather, it’s about feeling great, having more energy, improving your health, and boosting your mood.Healthy eating doesn’t have to be overly complicated. If you feel overwhelmed by all the conflicting nutrition and diet advice out there, you’re not alone. It seems that for every expert who tells you a certain food is good for you, you’ll find another saying exactly the opposite. The truth is that while some specific foods or nutrients have been shown to have a beneficial effect on mood, it’s your overall dietary pattern that is most important. The cornerstone of a healthy diet should be to replace processed food with real food whenever </p>
         </section></div>
-        <br><hr width="95%"><br>
+        <br>
+        <section id="section2">
+        <hr width="95%"><br>
         <div class="longbox">
         <div class="picture">
             <img src="immune.jpg" alt="immunity booster" height=430 width="430"></div>
         </div>
-        <section id="section2">
         <div class="box">
             <h2>Immunity Boosting</h2>
             <p class="container">A strong immune system helps to keep a person healthy. Can specific foods boost the immune system?
@@ -101,12 +109,13 @@
             
             Incorporating specific foods into the diet may strengthen a person’s immune response. Read on to discover 15 foods that boost the immune system.</p>
         </section></div>
-        <br><hr width="95%"><br>
+        <br>
+        <section id="section3">
+        <hr width="95%"><br>
         <div class="longbox">
         <div class="picture">
             <img src="pizza.jpg" alt="pizza" height=430 width="430"></div>
         </div>
-        <section id="section3">
         <div class="box"> 
             <h2>Italian Cuisine</h2>
             <p class="container">Pizza (Italian: [ˈpittsa], Neapolitan: [ˈpittsə]) is a savory dish of Italian origin consisting of a usually round, flattened base of leavened wheat-based dough topped with tomatoes, cheese, and often various other ingredients (such as anchovies, mushrooms, onions, olives, pineapple, meat, etc.), which is then baked at a high temperature, traditionally in a wood-fired oven.[1] A small pizza is sometimes called a pizzetta. A person who makes pizza is known as a pizzaiolo.
