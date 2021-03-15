@@ -1,0 +1,16 @@
+* {
+    box-sizing: border-box;
+}
+.container-fluid {
+    height: 800px;
+}
+.row {
+    margin-bottom: 15px;
+    height: 45%;
+    border: 1px solid blue;
+}
+.row > div {
+    border: 1px solid black;
+    background-color:gold;
+    height: 100%;
+}
