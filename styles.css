@@ -2,7 +2,11 @@
     box-sizing: border-box;
 }
 .container-fluid {
+    padding-top: 70px;
     height: 800px;
+}
+h1 {
+    margin-left: 50px;
 }
 .row {
     margin-bottom: 15px;
